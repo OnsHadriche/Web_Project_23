@@ -8,16 +8,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="styles/Style.css" />
     <title>Ons.</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <img src="images/logo.png" alt="logo">
+          <img src="images/logo.png" alt="logo" />
         </div>
         <div class="pages">
-          <ul>
+          <ul class="list-nav">
             <li>
               <a href="acceuil.html" target="_blank"> Acceuil </a>
             </li>
@@ -38,29 +39,34 @@
             </li>
           </ul>
         </div>
-        <div class="btn-contact">
-          <button type="button">Contact</button>
-        </div>
-        <div class="toggel-btn">
-          <div>
-            <button type="button">Toggel</button>
+        <div class="btn-home">
+          <div class="btn-contact">
+            <div id="btn-contact">Contact</div>
+          </div>
+          <div class="toggel-btn">
+            <div>
+              <div id="btn-toggel">
+                <i class="fa-solid fa-toggle-on"></i>
+                <i class="fa-solid fa-toggle-off"></i>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <section>
       <article>
-        <div class="biblio">
-          <div class="image-per">
-            <img src="images/ons.jpg" alt="moi meme" />
+        <div class="container">
+          <div class="model">
+            <img src="images/ons.png" alt="moi meme" />
           </div>
-          <h2>Ons Hadrich</h2>
-          <div>
-            Je suis Ons Hadrich diplomée en mastére de recherche et en license
-            fondamentale en Science et Technologie de l'inforamtion et de
-            communication de l'école nationale d'electronique et des
-            telecommunications "<span>ENET</span><span>'Com</span>".
-            Actullement, je suis élève ingénieur en génie informatique à IIT en Sfax.
+          <div class="main-text">
+            <h5>Bienvenu à mon  univers</h5>
+            <h1>Salut ! je suis Ons Hadrich</h1>
+            <p>
+              Développeuse full-stack (MEARN JS) et élève ingénieur en genie informatique
+            </p>
+            <a href="pages/Compétence.html" id="protfolio-btn" >voir mon portfolio </a>
           </div>
         </div>
       </article>
