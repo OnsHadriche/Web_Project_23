@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "MyPoppins";
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooths;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "MyPoppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+/*nav*/
+.pages {
+  width: 700px;
+}
+
+.list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list-nav li a {
+  text-decoration: none;
+  /* color: rgb(34, 33, 33); */
+  color: #CE7777!important;
+}
+.list-nav li  {
+  text-decoration: none;
+  transition: all 0.5s linear;
+
+}
+.list-nav li:hover{
+  font-weight: bold;
+  /*translation*/
+  transform: scale(1.5);
+  
+
+}
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.logo {
+  top: 2px;
+}
+.logo img {
+  height: 120px;
+}
+.btn-home {
+    width: 10em;
+  display: flex;
+  justify-content: space-between;
+}
+#btn-contact{
+    color: #CE7777;
+    transition: all 0.5s linear;
+}
+.btn-home #btn-contact:hover{
+    font-weight: bold;
+    transform: scale(1.5) ;
+  
+}
+/*main-home*/
+.container{
+    width: 90%;
+    position: absolute;
+	top: 50%;
+    bottom: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.model{
+	width:500px;
+	height: 500px;
+}
+.model img{
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+}
+.main-text{
+    width: 500px;
+}
+.main-text h1{
+    font-size: 2.2rem;
+    color:#2B3A55;
+	margin:0px 0px 10px 0px;
+	line-height: 40px;
+}
+.main-text p{
+	color:#4e4c4c;
+    font-size: 1.5rem;
+}
+#protfolio-btn{
+    width: 190px;
+    height: 45px;
+    background-color: #c7877e;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
+}
+#protfolio-btn:hover{
+    background-color: #8a534c;
+	transition: all ease 0.2s;
+}
