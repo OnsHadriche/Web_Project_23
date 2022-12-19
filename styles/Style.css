@@ -27,19 +27,16 @@ body {
 .list-nav li a {
   text-decoration: none;
   /* color: rgb(34, 33, 33); */
-  color: #CE7777!important;
+  color: #ce7777 !important;
 }
-.list-nav li  {
+.list-nav li {
   text-decoration: none;
   transition: all 0.5s linear;
-
 }
-.list-nav li:hover{
+.list-nav li:hover {
   font-weight: bold;
   /*translation*/
   transform: scale(1.5);
-  
-
 }
 nav {
   height: 80px;
@@ -59,65 +56,124 @@ nav {
   height: 120px;
 }
 .btn-home {
-    width: 10em;
+  width: 10em;
   display: flex;
   justify-content: space-between;
 }
-#btn-contact{
-    color: #CE7777;
-    transition: all 0.5s linear;
+#btn-contact {
+  color: #ce7777;
+  transition: all 0.5s linear;
 }
-.btn-home #btn-contact:hover{
-    font-weight: bold;
-    transform: scale(1.5) ;
-  
+.btn-home #btn-contact:hover {
+  font-weight: bold;
+  transform: scale(1.5);
 }
 /*main-home*/
+.container {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  bottom: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .container{
-    width: 90%;
-    position: absolute;
-	top: 50%;
-    bottom: 35%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.model{
-	width:500px;
-	height: 500px;
+.model {
+  left: 0;
+  width: 500px;
+  height: 400px;
+  box-shadow: -60px -30px 2px 1px #c7877e;
+  border-radius: 2%;
 }
-.model img{
-	width:100%;
-	height: 100%;
-	object-fit: contain;
+.model img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 100000;
+  border-radius: 2% ;
+ 
 }
-.main-text{
-    width: 500px;
+
+.main-text {
+  width: 500px;
 }
-.main-text h1{
-    font-size: 2.2rem;
-    color:#2B3A55;
-	margin:0px 0px 10px 0px;
-	line-height: 40px;
+.main-text h1 {
+  font-size: 2.2rem;
+  color: #2b3a55;
+  margin: 0px 0px 10px 0px;
+  line-height: 40px;
 }
-.main-text p{
-	color:#4e4c4c;
-    font-size: 1.5rem;
+.main-text p {
+  color: #4e4c4c;
+  font-size: 1.5rem;
 }
-#protfolio-btn{
-    width: 190px;
-    height: 45px;
-    background-color: #c7877e;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    
+#protfolio-btn {
+  width: 190px;
+  height: 45px;
+  background-color: #c7877e;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
-#protfolio-btn:hover{
-    background-color: #8a534c;
-	transition: all ease 0.2s;
+#protfolio-btn:hover {
+  background-color: #8a534c;
+  transition: all ease 0.2s;
 }
+/*lien social media*/
+aside .social{
+  position: fixed;
+  top: 50%;
+  left: 97%;
+  width: 50px;
+  height: 200px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* margin: 0; */
+}
+/* Style the icon bar links */
+aside .social a  {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+
+}
+/* Style the social media icons with color, if you want */
+aside .social a:hover {
+  background-color: rgb(88, 85, 85);
+}
+.github{
+  background: #000;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
