@@ -6,17 +6,22 @@
   box-sizing: border-box;
   scroll-behavior: smooths;
 }
-
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "MyPoppins", sans-serif;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 /*nav*/
 .pages {
-  width: 700px;
+  width: 650px;
 }
 
 .list-nav {
@@ -39,13 +44,15 @@ body {
   transform: scale(1.5);
 }
 nav {
+  margin-top: 0;
+  top: 0;
   height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 1000000;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -68,28 +75,38 @@ nav {
   font-weight: bold;
   transform: scale(1.5);
 }
+.toggel-btn {
+  width: 100px;
+}
+.toggel-btn i {
+  font-size: 40px;
+  color: #ce7777;
+}
+.portfolio {
+  display: flex;
+}
 /*main-home*/
 .container {
   width: 90%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   bottom: 35%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.container{
+.container {
   width: 100%;
   height: 100%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-  rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .model {
   left: 0;
   width: 500px;
-  height: 400px;
+  height: 300px;
   box-shadow: -60px -30px 2px 1px #c7877e;
   border-radius: 2%;
 }
@@ -98,23 +115,80 @@ nav {
   height: 100%;
   object-fit: fill;
   z-index: 100000;
-  border-radius: 2% ;
- 
+  border-radius: 2%;
 }
 
 .main-text {
-  width: 500px;
+  width: 650px;
 }
 .main-text h1 {
   font-size: 2.2rem;
   color: #2b3a55;
   margin: 0px 0px 10px 0px;
   line-height: 40px;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.main-text h1 span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.main-text h1 span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text h1 span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text h1 span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.main-text h1 span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text h1 span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text h1 span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 .main-text p {
   color: #4e4c4c;
   font-size: 1.5rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+.main-text p span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.main-text p span {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 #protfolio-btn {
   width: 190px;
   height: 45px;
@@ -126,13 +200,14 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  margin-left: 5px;
 }
 #protfolio-btn:hover {
   background-color: #8a534c;
   transition: all ease 0.2s;
 }
 /*lien social media*/
-aside .social{
+aside .social {
   position: fixed;
   top: 50%;
   left: 97%;
@@ -144,26 +219,25 @@ aside .social{
   /* margin: 0; */
 }
 /* Style the icon bar links */
-aside .social a  {
+aside .social a {
   display: block;
   text-align: center;
   padding: 15px;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-
 }
 /* Style the social media icons with color, if you want */
 aside .social a:hover {
   background-color: rgb(88, 85, 85);
 }
-.github{
+.github {
   background: #000;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -176,4 +250,10 @@ aside .social a:hover {
   background: #007bb5;
   color: white;
 }
-
+footer {
+  height: 100px;
+  background-color: #c7877e;
+  position: relative;
+  top: 32.3rem;
+  padding: 20px;
+}
