@@ -1,0 +1,92 @@
+
+body{
+    background-image: url(/images/backgroundImage.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    position: relative;
+    top: 25%;
+}
+
+.project-main h1{
+    margin: 20px;
+    text-align: left;
+    color: rgb(18, 37, 63);
+    font-size: 2rem;
+}
+.project-main .project-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ 
+}
+
+.project-container .list-card{
+   list-style: none;
+   margin-left: 20px;
+   border-left: 2px solid #e6e9ed;
+  
+}
+
+
+.project-main-card{
+    width: 1200px;
+    border-left: 2px solid coral;
+    border-radius: 5px;
+    margin-bottom: 1.875rem;
+    padding:  1.2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #FFF5E4 0%, #FFC4C4 100%);
+  
+}
+.project-card-parcours .title{
+   display: inline-block;
+   text-align: left;
+   margin-right: 40px;
+   line-height: 20px;
+}
+.project-card-parcours .title div {
+   font-size: 1rem;
+}
+
+.project-timeline-card-success:before {
+    border-color: coral;
+}
+.project-card-parcours:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color:  coral;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 42px;
+    left: -52px;
+    border: 2px solid coral;
+    z-index: 2;
+}
+.project-card-parcours:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: coral;
+    width: 36px;
+    height: 2px;
+    top: 50px;
+    left: -36px;
+    z-index: 1;
+}
+#pfa{
+    margin-right: 140px;
+}
+#stage{
+    margin-left: 30px;
+}
+#title-project{
+    margin-right: 70px;
+}

@@ -17,7 +17,7 @@
 }
 .parcours-academique .image-parcour {
   width: 400px;
-  height: 600px;
+  height: 800px;
 }
 .parcours-academique ul{
    list-style: none;
@@ -76,4 +76,32 @@
 }
 footer{
     margin:20rem;
+}
+.title .title-certif #emise{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.btn-affiche{
+    border: 2px solid rgb(112, 107, 107);
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.btn-affiche:hover{
+  background-color: #F0DBDB;
+ 
+}
+.btn-affiche a{
+    
+    text-decoration: none;
+    font-size: 15px;
+    color: darkgray;
+}
+.btn-affiche a:hover{
+    color: #9b6f69;;
+}
+.title h4{
+    display: flex;
+    align-items: center;
 }

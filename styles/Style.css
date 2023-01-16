@@ -52,7 +52,7 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 1000000;
+  z-index: 100000011;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -67,9 +67,13 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.btn-contact{
+  cursor: pointer;
+}
 #btn-contact {
   color: #ce7777;
   transition: all 0.5s linear;
+ 
 }
 .btn-home #btn-contact:hover {
   font-weight: bold;
