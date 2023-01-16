@@ -1,0 +1,22 @@
+.container-main{
+   margin-top: 10rem;
+   scroll-behavior: smooth;
+}
+.competence{
+    margin:5px 20px ;
+
+  
+}
+.competence{
+    text-align: left;
+    color: rgb(18, 37, 63);
+    font-size: 2rem;
+}
+.container-academique{
+   margin-left: 4rem;
+}
+.container-academique h4{
+    color: rgb(42, 77, 126);
+
+    font-size: 1.2rem;
+}
