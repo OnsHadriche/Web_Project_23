@@ -1,0 +1,79 @@
+
+.parcours-academique{
+    margin:5px 20px ;
+    position: relative;
+    top: 25%;
+  
+}
+.parcours-academique h1{
+    text-align: left;
+    color: rgb(18, 37, 63);
+    font-size: 2rem;
+}
+.parcours-academique .parcours-academique-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.parcours-academique .image-parcour {
+  width: 400px;
+  height: 600px;
+}
+.parcours-academique ul{
+   list-style: none;
+   margin-left: 20px;
+   border-left: 2px solid #e6e9ed;}
+
+
+.card-parcours{
+    width: 700px;
+    border-left: 2px solid coral;
+    border-radius: 5px;
+    margin-bottom: 1.875rem;
+    padding:  1.2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.card-parcours .title{
+   display: inline-block;
+   text-align: left;
+   line-height: 20px;
+}
+.card-parcours .title div {
+   color: rgb(90, 92, 90);
+   font-size: 1.2rem;
+}
+
+.timeline-card-success:before {
+    border-color: coral;
+}
+.card-parcours:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color:  coral;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 42px;
+    left: -52px;
+    border: 2px solid coral;
+    z-index: 2;
+}
+.card-parcours:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: coral;
+    width: 36px;
+    height: 2px;
+    top: 50px;
+    left: -36px;
+    z-index: 1;
+}
+footer{
+    margin:20rem;
+}
