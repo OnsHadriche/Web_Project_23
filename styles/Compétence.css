@@ -1,22 +1,203 @@
-.container-main{
-   margin-top: 10rem;
-   scroll-behavior: smooth;
+.container-main {
+  margin-top: 8rem;
+  scroll-behavior: smooth;
 }
-.competence{
-    margin:5px 20px ;
+.competence {
+  margin: 5px 20px;
+}
+.competence {
+  text-align: left;
+  color: rgb(18, 37, 63);
+  font-size: 2rem;
+}
+.container-academique {
+  margin-left: 4rem;
+}
 
-  
+/*skiils*/
+.wrapper-skills {
+    margin-left: 8%;
+  margin-top: 1rem;
+  width: 80%;
+  min-width: 590px;
 }
-.competence{
-    text-align: left;
-    color: rgb(18, 37, 63);
-    font-size: 2rem;
+.container-skills {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.container-academique{
-   margin-left: 4rem;
+.container-skills h4 {
+  color: rgb(42, 77, 126);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
-.container-academique h4{
-    color: rgb(42, 77, 126);
+/*skills bar*/
+.skills{
 
-    font-size: 1.2rem;
+    margin-left: 1rem;
 }
+.details{
+   
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.details span:nth-child(1){
+    color: #2B3A55;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.bar{
+    position: relative;
+    border: 2px solid #A75D5D;
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #CE7777;
+
+
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+
+}
+/*langages*/
+.bar #js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 90%;
+    }
+}
+.bar #python-bar{
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+    100%{
+        width: 70%;
+    }
+}
+.bar #c-bar{
+    animation: c-fill 2s forwards;
+}
+@keyframes c-fill{
+    100%{
+        width: 50%;
+    }
+}
+.bar #java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 50%;
+    }
+}
+/*tech web*/
+.bar #html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+.bar #css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+.bar #bootsrap-bar{
+    animation: bootsrap-fill 2s forwards;
+}
+@keyframes bootsrap-fill{
+    100%{
+        width: 90%;
+    }
+}
+.bar #react-bar{
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill{
+    100%{
+        width: 80%;
+    }
+}
+.bar #node-bar{
+    animation: node-fill 2s forwards;
+}
+@keyframes node-fill{
+    100%{
+        width: 80%;
+    }
+}
+.bar #mongo-bar{
+    animation: mongo-fill 2s forwards;
+}
+@keyframes mongo-fill{
+    100%{
+        width: 80%;
+    }
+}
+/*version  logiciel*/
+.bar #git-bar{
+    animation: git-fill 2s forwards;
+}
+@keyframes git-fill{
+    100%{
+        width: 60%;
+    }
+}
+.bar #github-bar{
+    animation: github-fill 2s forwards;
+}
+@keyframes github-fill{
+    100%{
+        width: 60%;
+    }
+}
+/*langue*/
+.bar #arabe-bar{
+    animation: arabe-fill 2s forwards;
+}
+@keyframes arabe-fill{
+    100%{
+        width: 100%;
+    }
+}
+.bar #francais-bar{
+    animation: francais-fill 2s forwards;
+}
+@keyframes francais-fill{
+    100%{
+        width: 70%;
+    }
+}
+.bar #anglais-bar{
+    animation: anglais-fill 2s forwards;
+}
+@keyframes anglais-fill{
+    100%{
+        width: 50%;
+    }
+}
+/* .container-skills *{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-weight: 500;
+} */
