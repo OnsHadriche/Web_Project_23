@@ -254,10 +254,20 @@ aside .social a:hover {
   background: #007bb5;
   color: white;
 }
-footer {
-  height: 100px;
-  background-color: #c7877e;
-  position: relative;
-  top: 32.3rem;
-  padding: 20px;
+.list-info{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ 
+}
+.list-info li {
+  margin-top: 10px;
+
+}
+.list-info li i{
+  color:#007bb5 ;
+}
+.list-info li span{
+  color: #0a202b;
 }
