@@ -1,0 +1,39 @@
+section h1 {
+  margin: 20px;
+  text-align: left;
+  color: rgb(18, 37, 63);
+  font-size: 2rem;
+  margin-top: 10%;
+}
+.conatiner-main-quiz form {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.sous-quiz {
+  border-left: 2px solid rgb(123, 123, 145);
+  padding-left: 5px;
+}
+.sous-quiz1 {
+  border-left: 2px solid rgb(123, 123, 145);
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+.btn-valide {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border: 2px solid #ffc4c4;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-left: 40%;
+  margin-bottom: 10px;
+}
+.btn-valide:hover {
+  background-color: #ffc4c4;
+}

@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/styles/Style.css" />
+    <link rel="stylesheet" href="/styles/quiz.css" />
+    <title>Ons.</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+        <div class="pages">
+          <ul class="list-nav">
+            <li>
+              <a href="/acceuil.html"> Accueil </a>
+            </li>
+            <li>
+              <a href="/pages/ParcourAcad.html"> Parcours </a>
+            </li>
+            <li>
+              <a href="/pages/Compétence.html"> Compétences </a>
+            </li>
+            <li>
+              <a href="/pages/Projet.html"> Projets </a>
+            </li>
+            <li>
+              <a href="/pages/Quiz.html"> Quiz </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-home">
+          <div class="btn-contact">
+            <div id="btn-contact">Contact</div>
+          </div>
+        </div>
+       
+      </nav>
+    </header>
+    <section>
+      <h1>Math-Quiz</h1>
+      <div class="conatiner-main-quiz">
+        <form name="quiz">
+          <div class="sous-quiz">
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 1: Si Un est une suite géometrique de rasion 2 et de
+                permeir terme 4 alors sont 5éme terme égale à:
+              </h5>
+              <div>
+                <input type="radio" name="choix" value="1" />
+                <label for="choix" id="value1">16</label><br />
+
+                <input type="radio" name="choix" value="2" />
+                <label for="choix" id="value2">64 </label><br />
+                <input type="radio" name="choix" value="3" />
+                <label for="choix" id="value3">128</label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 2: Soit S = U<sub>1</sub> +U<sub>2</sub>+......+U<sub
+                  >5</sub
+                >
+                et U<sub>n</sub> est une suite geometrique de raison 3 etU<sub
+                  >1</sub
+                >
+                = 9 et U<sub>5</sub> = 729, Donc S égale à:
+              </h5>
+              <div>
+                <input type="radio" name="choix1" value="4" />
+                <label for="choix1" id="value4">3276</label><br />
+
+                <input type="radio" name="choix1" value="5" />
+                <label for="choix1" id="value5">1758</label><br />
+                <input type="radio" name="choix1" value="6" />
+                <label for="choix1" id="value6">128</label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 3: Qui a découvert le Symbole Infini "∞":
+              </h5>
+              <div>
+                <input type="radio" name="choix2" value="7" />
+                <label for="choix2" id="value7"> John Wallis </label><br />
+                <input type="radio" name="choix2" value="8" />
+                <label for="choix2" id="value8"> Pythagore de Samos</label
+                ><br />
+                <input type="radio" name="choix2" value="9" />
+                <label for="choix2" id="value9"> Albert Einstein </label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 4: SQui a découvert le Quantificateur Existentiel ∃ (il
+                existe):
+              </h5>
+              <div>
+                <input type="radio" name="choix3" value="10" />
+                <label for="choix3" id="value10"> Giuseppe Peano </label>
+                <br />
+                <input type="radio" name="choix3" value="11" />
+                <label for="choix3" id="value11"> Arnold Sommerfeld </label
+                ><br />
+                <input type="radio" name="choix3" value="12" />
+                <label for="choix3" id="value12">
+                  Muhammad ibn Musa al-Khwarizmi
+                </label>
+                <br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 5: Quel est le volume d'une sphère :
+              </h5>
+              <div>
+                <input type="radio" name="choix4" value="13" />
+                <label for="choix4" id="value13"> (PI x R)^2 </label>
+                <br />
+                <input type="radio" name="choix4" value="14" />
+                <label for="choix4" id="value14"> 4 x PI x (R^2)/3 </label>
+                <br />
+                <input type="radio" name="choix4" value="15" />
+                <label for="choix4" id="value15"> 4/3 x PI x R^3 </label>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <div class="sous-quiz1">
+            <div class="main-quiz">
+              <h5 class="question">Question 6: Combien font 12 fois 12?</h5>
+              <div>
+                <input type="radio" name="choix5" value="16" />
+                <label for="choix5" id="value16"> 144 </label><br />
+                <input type="radio" name="choix5" value="17" />
+                <label for="choix5" id="value17"> 124</label><br />
+                <input type="radio" name="choix5" value="18" />
+                <label for="choix5" id="value18">134</label><br />
+              </div>
+            </div>
+
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 7: Quel nombre est un nombre premier ?
+              </h5>
+              <div>
+                <input type="radio" name="choix6" value="19" />
+                <label for="choix6" id="value19"> 49</label><br />
+                <input type="radio" name="choix6" value="20" />
+                <label for="choix6" id="value20"> 13</label><br />
+                <input type="radio" name="choix6" value="21" />
+                <label for="choix6" id="value21"> 81</label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 8:Combien vaut pi à 8 décimales près?
+              </h5>
+              <div name="q8">
+                <input type="radio" name="choix7" value="22" />
+                <label for="choix7" id="value22"> à 3,14159265 </label>
+                <br />
+                <input type="radio" name="choix7" value="23" />
+                <label for="choix7" id="value23">à 3,14158471</label><br />
+                <input type="radio" name="choix7" value="24" />
+                <label for="choix7" id="value24">a3.14157264</label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 9: Quelle est la racine cubique de 64 ?
+              </h5>
+              <div>
+                <input type="radio" name="choix8" value="25" />
+                <input type="radio" name="choix8" value="26" />
+                <label for="choix8" id="value25">4</label><br />
+                <label for="choix8" id="value26"> 8</label><br />
+                <input type="radio" name="choix8" value="27" />
+                <label for="choix8" id="value27">26</label><br />
+              </div>
+            </div>
+            <div class="main-quiz">
+              <h5 class="question">
+                Question 10: Quel est le périmètre d'un cercle ?
+              </h5>
+              <div>
+                <input type="radio" name="choix9" value="28" />
+                <label for="choix9" id="value28"> (PI R) / 2</label><br />
+                <input type="radio" name="choix9" value="29" />
+                <label for="choix9" id="value29">2 x PI x R</label><br />
+                <input type="radio" name="choix9" value="30" />
+                <label for="choix9" id="value30">PI x R^2 </label><br />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <button onclick="reponse(quiz), affiche()" class="btn-valide">Valider</button>
+    </section>
+   
+    <script src="/code/quiz.js"></script>
     <script src="../code/contacts.js"></script>
-</body>
+  </body>
 </html>
